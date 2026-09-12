@@ -1,7 +1,7 @@
 {
     "name": "stellarmc-launcher",
     "productName": "Stellar Network",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Launcher Oficial de Stellar Network",
     "main": "src/app.js",
     "author": {
