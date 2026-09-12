@@ -1,0 +1,232 @@
+@import "font.css";
+@import "theme.css";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    font-family:Poppins,sans-serif;
+    background:#01060b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    animation:fadePage .8s ease forwards;
+}
+
+.space{
+    position:absolute;
+    inset:0;
+    /* Forzamos que se mantenga en el fondo absoluto */
+    z-index: 0; 
+    background:
+    radial-gradient(circle at 50% 35%, rgba(0, 162, 232, 0.23) 0%, transparent 55%),
+    radial-gradient(circle at 85% 20%, rgba(0, 100, 200, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 15% 75%, rgba(2, 40, 80, 0.6) 0%, transparent 50%),
+    linear-gradient(135deg, #020912 0%, #041321 40%, #01060b 100%);
+    overflow: hidden;
+}
+
+/* El canvas heredará todo el espacio trasero de forma fluida */
+.space canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.glass{
+    position:relative;
+    z-index:1;
+
+    width:95%;
+    height:92%;
+    border-radius:30px;
+
+    /* Sin fondo */
+    background:transparent !important;
+
+    /* Sin efecto cristal */
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
+
+    /* Borde muy suave */
+    border:1px solid rgba(70,220,255,.08);
+
+    /* Solo un brillo exterior leve */
+    box-shadow:0 0 60px rgba(0,207,255,.08);
+
+    overflow:hidden;
+
+    opacity:0;
+    transform:scale(.97);
+    animation:panelShow .8s cubic-bezier(.2,.8,.2,1) forwards;
+}
+
+/* Corregido el Webkit-mask que a veces rompe transparencias en Chromium de Electron */
+.glass::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:30px;
+    padding:1px;
+    background:linear-gradient(90deg,transparent,#20ddff,transparent);
+    background-size:200%;
+    animation:borderMove 5s linear infinite;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    pointer-events: none;
+}
+
+.scan{
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:60%;
+    height:2px;
+    background:#34ddff;
+    box-shadow:0 0 25px #34ddff;
+    animation:scanMove 5s infinite;
+}
+
+.center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.center-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    opacity:0;
+    transform:scale(.96);
+    animation:centerShow .8s cubic-bezier(.2,.8,.2,1) .5s forwards;
+}
+
+.orb{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:radial-gradient(circle,#00eaff55,transparent 65%);
+    animation:orbPulse 4s infinite;
+}
+
+.orb-core{
+    width:85px;
+    height:85px;
+    border-radius:50%;
+    background:radial-gradient(circle,white,#20ddff 40%,#007cff);
+    box-shadow:0 0 40px #00dfff,0 0 90px #00dfff;
+}
+
+h1{
+    margin-top:-5px;
+    font-size:62px;
+    font-weight:700;
+    letter-spacing:3px;
+    color:white;
+    text-align:center;
+    text-shadow:0 0 20px #00dfff,0 0 60px #00dfff55;
+}
+
+.subtitle{
+    margin-top:15px;
+    color:#8cecff;
+    font-size:21px;
+}
+
+.loading{
+    position:absolute;
+    right:55px;
+    bottom:45px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    opacity:0;
+    animation:loadingShow .8s 1s forwards;
+}
+
+.loader{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    border:3px solid rgba(255,255,255,.1);
+    border-top-color:#27ddff;
+    animation:spin .8s linear infinite;
+    box-shadow:0 0 25px #00dfff70;
+}
+
+.load-text{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.message{
+    color:white;
+    font-size:17px;
+}
+
+.progress{
+    width:230px;
+    height:8px;
+    appearance:none;
+}
+
+.progress::-webkit-progress-bar{
+    background:#ffffff15;
+    border-radius:20px;
+}
+
+.progress::-webkit-progress-value{
+    background:linear-gradient(90deg,#00dfff,#008cff);
+    border-radius:20px;
+}
+
+@keyframes fadePage{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes panelShow{
+    to{opacity:1;transform:scale(1);}
+}
+
+@keyframes centerShow{
+    from{opacity:0;transform:scale(.96);}
+    to{opacity:1;transform:scale(1);}
+}
+
+@keyframes loadingShow{
+    to{opacity:1;}
+}
+
+@keyframes spin{
+    to{transform:rotate(360deg);}
+}
+
+@keyframes orbPulse{
+    50%{transform:scale(1.08);}
+}
+
+@keyframes borderMove{
+    to{background-position:200%;}
+}
+
+@keyframes scanMove{
+    to{left:130%;}
+}

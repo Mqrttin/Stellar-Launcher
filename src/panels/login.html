@@ -1,0 +1,154 @@
+<div class="container">
+
+    <div class="login-home login-tabs">
+
+        <div class="login-heading">
+            <span class="login-kicker">STELLAR NETWORK</span>
+            <h1 class="login-title">Iniciar sesión</h1>
+            <p class="login-subtitle">Selecciona cómo quieres conectarte</p>
+        </div>
+
+        <div class="login-home-cards">
+
+            <button class="connect connect-home connect-button-online login-card">
+                <div class="login-card-image">
+                    <img src="assets/images/masterball.png" alt="Premium">
+                </div>
+
+                <div class="login-card-info">
+                    <span>PREMIUM</span>
+                    <strong>Microsoft</strong>
+                    <small>Inicia sesión con tu cuenta Microsoft</small>
+                </div>
+
+                <div class="login-card-arrow">→</div>
+            </button>
+
+            <button class="connect connect-home connect-button-offline login-card">
+                <div class="login-card-image">
+                    <img src="assets/images/pokeball.png" alt="No Premium">
+                </div>
+
+                <div class="login-card-info">
+                    <span>NO PREMIUM</span>
+                    <strong>Nombre de usuario</strong>
+                    <small>Juega sin una cuenta Premium</small>
+                </div>
+
+                <div class="login-card-arrow">→</div>
+            </button>
+
+        </div>
+
+        <button class="cancel cancel-home" style="display:none">Cancelar</button>
+
+    </div>
+
+    <div class="login-offline login-tabs">
+
+        <div class="login-heading">
+            <span class="login-kicker">NO PREMIUM</span>
+            <h1 class="login-title">Iniciar sesión</h1>
+            <p class="login-subtitle">Introduce tu nombre de usuario para continuar</p>
+        </div>
+
+        <div class="input-login">
+
+            <input
+                type="text"
+                class="email email-offline"
+                placeholder="Nombre de usuario"
+                maxlength="16"
+                autocomplete="off"
+            />
+
+            <button class="connect connect-offline">
+                <span>Acceder</span>
+                <b>→</b>
+            </button>
+
+            <button class="cancel cancel-offline">
+                Cancelar
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="login-AZauth login-tabs">
+
+        <div class="login-heading">
+            <span class="login-kicker">CUENTA PREMIUM</span>
+            <h1 class="login-title">Iniciar sesión</h1>
+            <p class="login-subtitle">Introduce tus credenciales para continuar</p>
+        </div>
+
+        <div class="input-login">
+
+            <input
+                type="text"
+                class="email email-AZauth"
+                placeholder="E-mail"
+                autocomplete="username"
+            />
+
+            <input
+                type="password"
+                class="password password-AZauth"
+                placeholder="Password"
+                autocomplete="current-password"
+            />
+
+        </div>
+
+        <div class="login-options">
+
+            <button class="connect connect-AZauth">
+                <span>Confirmar</span>
+                <b>→</b>
+            </button>
+
+            <button class="cancel cancel-AZauth" style="display:none">
+                Cancelar
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="login-AZauth-A2F login-tabs">
+
+        <div class="login-heading">
+            <span class="login-kicker">VERIFICACIÓN</span>
+            <h1 class="login-title">Código de seguridad</h1>
+            <p class="login-subtitle">Ingresa el código de autenticación</p>
+        </div>
+
+        <div class="input-login">
+
+            <input
+                type="text"
+                class="A2F A2F-AZauth"
+                placeholder="Code"
+                maxlength="6"
+                autocomplete="one-time-code"
+            />
+
+        </div>
+
+        <div class="login-options">
+
+            <button class="connect connect-AZauth-A2F">
+                <span>Confirmar</span>
+                <b>→</b>
+            </button>
+
+            <button class="cancel cancel-AZauth-A2F">
+                Cancelar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

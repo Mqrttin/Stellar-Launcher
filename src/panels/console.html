@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Console</title>
+    <link rel="stylesheet" href="../assets/css/console.css">
+</head>
+<body>
+    <div class="console-window">
+        <header class="console-header">
+            <div class="console-title">
+                <div class="console-status"></div>
+                <div class="console-title-text">
+                    <span>STELLAR</span>
+                    <small>CONSOLE</small>
+                </div>
+            </div>
+
+            <div class="console-actions">
+                <button class="console-action" id="clear-console" title="Limpiar consola">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 7h12l-1 14H7L6 7zm3-4h6l1 2H8l1-2zm-5 4h16v2H4V7z"/>
+                    </svg>
+                </button>
+
+                <button class="console-action" id="minimize-console" title="Minimizar">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5 11h14v2H5z"/>
+                    </svg>
+                </button>
+
+                <button class="console-action close" id="close-console" title="Cerrar">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6.4 5L12 10.6 17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4 6.4 19 5 17.6 10.6 12 5 6.4z"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <div class="console-toolbar">
+            <div class="console-filters">
+                <button class="console-filter active" data-filter="all">ALL</button>
+                <button class="console-filter" data-filter="info">INFO</button>
+                <button class="console-filter" data-filter="download">DOWNLOAD</button>
+                <button class="console-filter" data-filter="success">SUCCESS</button>
+                <button class="console-filter" data-filter="warn">WARN</button>
+                <button class="console-filter" data-filter="error">ERROR</button>
+            </div>
+
+            <div class="console-counter">
+                <span id="log-count">0</span>
+                <span>LOGS</span>
+            </div>
+        </div>
+
+        <main class="console-content" id="console-output">
+            <div class="console-empty" id="console-empty">
+                <div class="console-empty-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 5h16v14H4V5zm2 2v10h12V7H6zm2 2h2v2H8V9zm4 0h4v2h-4V9zm-4 4h8v2H8v-2z"/>
+                    </svg>
+                </div>
+
+                <h2>STELLAR CONSOLE</h2>
+                <p>Esperando registros del launcher...</p>
+            </div>
+        </main>
+
+        <footer class="console-footer">
+            <div class="console-footer-status">
+                <span class="footer-dot"></span>
+                <span>CONNECTED</span>
+            </div>
+
+            <div class="console-footer-info">
+                <span id="console-time">00:00:00</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../assets/js/console.js"></script>
+</body>
+</html>

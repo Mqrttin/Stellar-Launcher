@@ -1,0 +1,386 @@
+<div class="settings-page">
+    <aside class="sidebar settings-sidebar">
+        <div class="sidebar-logo">
+            <img src="assets/images/icon.png" alt="Logo Launcher">
+        </div>
+
+        <div class="sidebar-buttons">
+            <div class="nav-btn" data-settings-target="play" data-tooltip="Jugar">
+                <svg viewBox="0 0 24 24">
+                    <path fill="white" d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
+
+            <div class="nav-btn" data-settings-target="instances" data-tooltip="Instancias">
+                <svg viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="white" stroke-width="2"/>
+                    <line x1="7" y1="8" x2="17" y2="8" stroke="white" stroke-width="2"/>
+                    <line x1="7" y1="12" x2="17" y2="12" stroke="white" stroke-width="2"/>
+                    <line x1="7" y1="16" x2="14" y2="16" stroke="white" stroke-width="2"/>
+                </svg>
+            </div>
+
+            <div class="nav-btn" data-settings-target="store" data-tooltip="Tienda">
+                <svg viewBox="0 0 24 24">
+                    <path fill="white" d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.2 14h9.9c.8 0 1.5-.5 1.8-1.2L21 6H6.2L5.3 4H2v2h2l3.6 7.6L6.2 16c-.1.3-.2.6-.2 1 0 1.1.9 2 2 2h12v-2H8.4c-.1 0-.2-.1-.2-.2l.1-.8z"/>
+                </svg>
+            </div>
+
+            <div class="nav-btn" data-settings-target="news" data-tooltip="Novedades">
+                <svg viewBox="0 0 24 24">
+                    <path fill="white" d="M6 2h9l5 5v15H6z"/>
+                    <polyline points="15 2 15 8 20 8" fill="none" stroke="#061522" stroke-width="2"/>
+                    <line x1="9" y1="12" x2="16" y2="12" stroke="#061522" stroke-width="2"/>
+                    <line x1="9" y1="16" x2="16" y2="16" stroke="#061522" stroke-width="2"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="settings-btn active" data-settings-target="settings" data-tooltip="Configuración">
+                <svg viewBox="0 0 24 24">
+                    <path fill="white" d="M19.4 13a7.7 7.7 0 0 0 .05-1 7.7 7.7 0 0 0-.05-1l2-1.5-2-3.5-2.3.9a8 8 0 0 0-1.7-1L15 3h-6l-.4 2.9a8 8 0 0 0-1.7 1L4.6 6 2.6 9.5l2 1.5a7.7 7.7 0 0 0-.05 1c0 .34.02.67.05 1l-2 1.5 2 3.5 2.3-.9 1.7 1L9 21h6l.4-2.9a8 8 0 0 0 1.7-1l2.3.9 2-3.5z"/>
+                    <circle cx="12" cy="12" r="3" fill="#061522"/>
+                </svg>
+            </div>
+        </div>
+    </aside>
+
+    <main class="launcher-window settings-launcher-window">
+        <div class="settings-main-layout">
+
+            <section class="settings-content-area">
+
+                <div class="settings-page-header">
+                    <div class="settings-heading">
+                        <div class="settings-heading-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path fill="white" d="M19.4 13a7.7 7.7 0 0 0 .05-1 7.7 7.7 0 0 0-.05-1l2-1.5-2-3.5-2.3.9a8 8 0 0 0-1.7-1L15 3h-6l-.4 2.9a8 8 0 0 0-1.7 1L4.6 6 2.6 9.5l2 1.5a7.7 7.7 0 0 0-.05 1c0 .34.02.67.05 1l-2 1.5 2 3.5 2.3-.9 1.7 1L9 21h6l.4-2.9a8 8 0 0 0 1.7-1l2.3.9 2-3.5z"/>
+                                <circle cx="12" cy="12" r="3" fill="#061522"/>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <span>STELLAR NETWORK</span>
+                            <h1>Configuración</h1>
+                            <p>Personaliza tu cuenta, Minecraft y el comportamiento del launcher.</p>
+                        </div>
+                    </div>
+
+                    <div class="settings-header-status">
+                        <span class="settings-header-dot"></span>
+                        <div>
+                            <strong>ACTIVO</strong>
+                            <small>CONFIGURACIÓN</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-layout">
+
+                    <aside class="settings-navigation">
+                        <div class="settings-navigation-title">
+                            CONFIGURACIÓN
+                        </div>
+
+                        <button id="account" class="settings-nav-item active">
+                            <span class="settings-nav-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="12" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="M5 20c.8-4 3.1-6 7-6s6.2 2 7 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <strong>Cuentas</strong>
+                                <small>Perfiles conectados</small>
+                            </span>
+                        </button>
+
+                        <button id="java" class="settings-nav-item">
+                            <span class="settings-nav-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="4" y="5" width="16" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="M8 9h8M8 13h5M8 16h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <strong>RAM</strong>
+                                <small>Memoria de Minecraft</small>
+                            </span>
+                        </button>
+
+                        <button id="resolution" class="settings-nav-item">
+                            <span class="settings-nav-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="M8 21h8M12 19v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <strong>Minecraft</strong>
+                                <small>Resolución y pantalla</small>
+                            </span>
+                        </button>
+
+                        <button id="launcher" class="settings-nav-item">
+                            <span class="settings-nav-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 3v12M8 11l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 18v2h14v-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <strong>Launcher</strong>
+                                <small>Descargas y rendimiento</small>
+                            </span>
+                        </button>
+
+                        <button id="credits" class="settings-nav-item">
+                            <span class="settings-nav-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M7 3h10v18H7z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="M10 7h4M10 11h4M10 15h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <strong>Redes</strong>
+                                <small>Stellar Network</small>
+                            </span>
+                        </button>
+
+                        <div class="settings-navigation-divider"></div>
+
+                        <button id="save" class="settings-nav-item settings-back-item">
+                            <span class="settings-nav-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <strong>Volver</strong>
+                                <small>Regresar al inicio</small>
+                            </span>
+                        </button>
+                    </aside>
+
+                    <div class="settings-panels">
+
+                        <div id="account-tab" class="settings-tab active-settings-tab">
+                            <div class="settings-tab-header">
+                                <div>
+                                    <span>CUENTA</span>
+                                    <h2>Cuentas</h2>
+                                    <p>Administra las cuentas de Minecraft conectadas al launcher.</p>
+                                </div>
+                            </div>
+
+                            <div class="accounts-list content-scroll">
+                                <div class="account" id="add">
+                                    <div class="add-profile">
+                                        <div class="icon-account-add"></div>
+                                    </div>
+                                    <div class="add-text-profile">Añadir una nueva cuenta.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="java-tab" class="settings-tab">
+                            <div class="settings-tab-header">
+                                <div>
+                                    <span>MINECRAFT</span>
+                                    <h2>Memoria RAM</h2>
+                                    <p>Define la cantidad de memoria que utilizará Minecraft.</p>
+                                </div>
+                            </div>
+
+                            <div class="settings-card">
+                                <div class="settings-card-info">
+                                    <div class="settings-card-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <rect x="3" y="6" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                                            <path d="M7 10h10M7 14h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3>Asignación de memoria</h3>
+                                        <p>Se recomienda utilizar entre 4 GB y 6 GB para una experiencia estable.</p>
+                                    </div>
+                                </div>
+
+                                <div class="ram-settings-area">
+                                    <div class="memory-slider" min="0.5" max="8" step="0.5">
+                                        <div class="slider-touch-left">
+                                            <span value="0 GB"></span>
+                                        </div>
+                                        <div class="slider-touch-right">
+                                            <span value="0 GB"></span>
+                                        </div>
+                                        <div class="slider-line">
+                                            <span></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="ram-info-block"></div>
+                                </div>
+                            </div>
+
+                            <div class="settings-note">
+                                <span>INFO</span>
+                                La memoria máxima disponible depende de la RAM instalada en tu equipo.
+                            </div>
+                        </div>
+
+                        <div id="resolution-tab" class="settings-tab">
+                            <div class="settings-tab-header">
+                                <div>
+                                    <span>MINECRAFT</span>
+                                    <h2>Resolución</h2>
+                                    <p>Configura la resolución con la que se iniciará Minecraft.</p>
+                                </div>
+                            </div>
+
+                            <div class="settings-card">
+                                <div class="settings-card-info">
+                                    <div class="settings-card-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                                            <path d="M8 21h8M12 19v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3>Resolución de pantalla</h3>
+                                        <p>Introduce el ancho y alto que utilizará el juego.</p>
+                                    </div>
+                                </div>
+
+                                <div class="resolution-settings-area">
+                                    <div class="input-size-element">
+                                        <input type="number" class="width-size input-resolution" placeholder="1920">
+                                        <div class="size-cross">×</div>
+                                        <input type="number" class="height-size input-resolution" placeholder="1080">
+                                    </div>
+
+                                    <button class="size-reset size-btn">
+                                        Restablecer a predeterminado
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="launcher-tab" class="settings-tab">
+                            <div class="settings-tab-header">
+                                <div>
+                                    <span>LAUNCHER</span>
+                                    <h2>Configuración del Launcher</h2>
+                                    <p>Controla el comportamiento de las descargas y del launcher.</p>
+                                </div>
+                            </div>
+
+                            <div class="settings-card">
+                                <div class="settings-card-info">
+                                    <div class="settings-card-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M12 3v12M8 11l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5 18v2h14v-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3>Descargas simultáneas</h3>
+                                        <p>Define cuántos archivos pueden descargarse al mismo tiempo.</p>
+                                    </div>
+                                </div>
+
+                                <div class="download-settings-area">
+                                    <div class="download-input">
+                                        <input type="number" class="max-files input-max-files" min="1">
+                                        <span>ARCHIVOS</span>
+                                    </div>
+
+                                    <button class="max-files-reset max-files-btn">
+                                        Restablecer
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="settings-card launcher-behaviour-card">
+                                <div class="settings-card-info">
+                                    <div class="settings-card-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M5 4h14v16H5z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                                            <path d="M9 8h6M9 12h6M9 16h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <h3>Comportamiento al iniciar el juego</h3>
+                                        <p>El launcher se ocultará automáticamente cuando Minecraft sea iniciado.</p>
+                                    </div>
+                                </div>
+
+                                <div class="launcher-status">
+                                    <span></span>
+                                    <div>
+                                        <strong>Ocultar launcher automáticamente</strong>
+                                        <small>El launcher se cerrará automáticamente al terminar de jugar.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="credits-tab" class="settings-tab">
+                            <div class="settings-tab-header">
+                                <div>
+                                    <span>COMUNIDAD</span>
+                                    <h2>Redes sociales</h2>
+                                    <p>Sigue a Stellar Network y mantente al día con todas las novedades.</p>
+                                </div>
+                            </div>
+
+                            <div class="social-settings-grid">
+                                <a class="social-settings-card youtube" href="https://www.youtube.com/@PokeArenaDeBatalla" target="_blank">
+                                    <div class="social-settings-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M23.5 6.19a3 3 0 0 0-2.11-2.12C19.53 3.56 12 3.56 12 3.56s-7.53 0-9.39.51A3 3 0 0 0 .5 6.19 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.81 3 3 0 0 0 2.11 2.12c1.86.51 9.39.51 9.39.51s7.53 0 9.39-.51a3 3 0 0 0 2.11-2.12A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.81ZM9.55 15.6V8.4L15.82 12l-6.27 3.6Z"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="social-settings-info">
+                                        <span>YOUTUBE</span>
+                                        <strong>Stellar Network</strong>
+                                        <small>Visitar canal</small>
+                                    </div>
+
+                                    <svg class="social-arrow" viewBox="0 0 24 24">
+                                        <path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+
+                                <a class="social-settings-card tiktok" href="https://www.tiktok.com/@.pokearena" target="_blank">
+                                    <div class="social-settings-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M19.59 7.12a5.2 5.2 0 0 1-3.02-3.02A5.18 5.18 0 0 1 16.28 2h-3.65v13.7a2.77 2.77 0 1 1-1.9-2.63v-3.7a6.48 6.48 0 1 0 5.49 6.33V8.76a8.75 8.75 0 0 0 5.1 1.63V6.74a5.18 5.18 0 0 1-1.73.38Z"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="social-settings-info">
+                                        <span>TIKTOK</span>
+                                        <strong>@.pokearena</strong>
+                                        <small>Visitar perfil</small>
+                                    </div>
+
+                                    <svg class="social-arrow" viewBox="0 0 24 24">
+                                        <path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>

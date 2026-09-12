@@ -1,0 +1,215 @@
+<div class="news-page">
+    <aside class="sidebar news-sidebar">
+        <div class="sidebar-logo">
+            <img src="assets/images/icon.png" alt="Logo Launcher">
+        </div>
+
+        <div class="sidebar-buttons">
+            <div class="nav-btn" data-news-target="play" data-tooltip="Jugar">
+                <svg viewBox="0 0 24 24">
+                    <path fill="white" d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
+
+            <div class="nav-btn" data-news-target="instances" data-tooltip="Instancias">
+                <svg viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="white" stroke-width="2"/>
+                    <line x1="7" y1="8" x2="17" y2="8" stroke="white" stroke-width="2"/>
+                    <line x1="7" y1="12" x2="17" y2="12" stroke="white" stroke-width="2"/>
+                    <line x1="7" y1="16" x2="14" y2="16" stroke="white" stroke-width="2"/>
+                </svg>
+            </div>
+
+            <div class="nav-btn" data-news-target="store" data-tooltip="Tienda">
+                <svg viewBox="0 0 24 24">
+                    <path fill="white" d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.2 14h9.9c.8 0 1.5-.5 1.8-1.2L21 6H6.2L5.3 4H2v2h2l3.6 7.6L6.2 16c-.1.3-.2.6-.2 1 0 1.1.9 2 2 2h12v-2H8.4c-.1 0-.2-.1-.2-.2l.1-.8z"/>
+                </svg>
+            </div>
+
+            <div class="nav-btn active" data-news-target="news" data-tooltip="Novedades">
+                <svg viewBox="0 0 24 24">
+                    <path fill="white" d="M6 2h9l5 5v15H6z"/>
+                    <polyline points="15 2 15 8 20 8" fill="none" stroke="#061522" stroke-width="2"/>
+                    <line x1="9" y1="12" x2="16" y2="12" stroke="#061522" stroke-width="2"/>
+                    <line x1="9" y1="16" x2="16" y2="16" stroke="#061522" stroke-width="2"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="settings-btn" data-news-target="settings" data-tooltip="Configuración">
+                <svg viewBox="0 0 24 24">
+                    <path fill="white" d="M19.4 13a7.7 7.7 0 0 0 .05-1 7.7 7.7 0 0 0-.05-1l2-1.5-2-3.5-2.3.9a8 8 0 0 0-1.7-1L15 3h-6l-.4 2.9a8 8 0 0 0-1.7 1L4.6 6 2.6 9.5l2 1.5a7.7 7.7 0 0 0-.05 1c0 .34.02.67.05 1l-2 1.5 2 3.5 2.3-.9a8 8 0 0 0 1.7 1L9 21h6l.4-2.9a8 8 0 0 0 1.7-1l2.3.9 2-3.5z"/>
+                    <circle cx="12" cy="12" r="3" fill="#061522"/>
+                </svg>
+            </div>
+        </div>
+    </aside>
+
+    <main class="launcher-window news-launcher-window">
+        <div class="news-main-layout">
+            <section class="news-content-area">
+                <div class="news-page-header">
+                    <div class="news-heading">
+                        <div class="news-heading-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6 3h9l4 4v14H6V3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                                <path d="M15 3v5h4M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <span>STELLAR NETWORK</span>
+                            <h1>Novedades</h1>
+                            <p>Todo lo que ocurre en nuestra comunidad, reunido en un solo lugar.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-header-status">
+                        <span class="news-header-dot"></span>
+                        <div>
+                            <strong id="news-count">0</strong>
+                            <small>PUBLICACIONES</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-filters">
+                    <button class="news-filter active" data-category="all">
+                        <span class="filter-svg">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="m12 2 1.8 7.2L21 12l-7.2 1.8L12 21l-1.8-7.2L3 12l7.2-1.8L12 2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        Todas
+                    </button>
+
+                    <button class="news-filter" data-category="general">
+                        <span class="filter-svg">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.54 5.01A16.9 16.9 0 0 0 15.47 3.7l-.5 1.03a15.2 15.2 0 0 0-5.94 0L8.53 3.7a16.9 16.9 0 0 0-4.07 1.31C1.88 8.89 1.18 12.7 1.53 16.46a16.7 16.7 0 0 0 5.02 2.56l1.22-1.67c-.67-.25-1.31-.56-1.91-.92l.47-.36c3.68 1.72 7.67 1.72 11.31 0l.48.36c-.6.36-1.24.67-1.91.92l1.22 1.67a16.7 16.7 0 0 0 5.02-2.56c.41-4.38-.7-8.15-2.91-11.45ZM8.6 14.8c-1.1 0-2-.99-2-2.2s.88-2.2 2-2.2 2 .99 2 2.2-.9 2.2-2 2.2Zm6.8 0c-1.1 0-2-.99-2-2.2s.88-2.2 2-2.2 2 .99 2 2.2-.9 2.2-2 2.2Z"/>
+                            </svg>
+                        </span>
+                        Discord
+                    </button>
+
+                    <button class="news-filter" data-category="tiktok">
+                        <span class="filter-svg">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 7.12a5.2 5.2 0 0 1-3.02-3.02A5.18 5.18 0 0 1 16.28 2h-3.65v13.7a2.77 2.77 0 1 1-1.9-2.63v-3.7a6.48 6.48 0 1 0 5.49 6.33V8.76a8.75 8.75 0 0 0 5.1 1.63V6.74a5.18 5.18 0 0 1-1.73.38Z"/>
+                            </svg>
+                        </span>
+                        TikTok
+                    </button>
+
+                    <button class="news-filter" data-category="youtube">
+                        <span class="filter-svg">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.5 6.19a3 3 0 0 0-2.11-2.12C19.53 3.56 12 3.56 12 3.56s-7.53 0-9.39.51A3 3 0 0 0 .5 6.19 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.81 3 3 0 0 0 2.11 2.12c1.86.51 9.39.51 9.39.51s7.53 0 9.39-.51a3 3 0 0 0 2.11-2.12A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.81ZM9.55 15.6V8.4L15.82 12l-6.27 3.6-6.27 3.6Z"/>
+                            </svg>
+                        </span>
+                        YouTube
+                    </button>
+
+                    <button class="news-filter" data-category="cobblemon">
+                        <span class="filter-svg">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="m12 2.5 8 4.5v10l-8 4.5L4 17V7l8-4.5Z" stroke="currentColor" stroke-width="1.6"/>
+                                <path d="m8 10 4-2 4 2-4 2-4-2Zm0 3 4 2 4-2" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        Cobblemon
+                    </button>
+
+                    <button class="news-filter" data-category="pixelmon">
+                        <span class="filter-svg">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M7 3h10v3h3v8h-3v4h-4v3h-2v-3H7v-4H4V6h3V3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                                <path d="M8 9h3M13 9h3M8 13h3M13 13h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        Pixelmon
+                    </button>
+                </div>
+
+                <section class="news-featured-section">
+                    <div class="news-section-heading">
+                        <div>
+                            <span>DESTACADO</span>
+                            <h2>Última noticia</h2>
+                        </div>
+
+                        <div class="news-live">
+                            <span></span>
+                            ACTUALIZADO
+                        </div>
+                    </div>
+
+                    <div id="news-featured" class="news-featured">
+                        <div class="news-loading">
+                            <span class="news-spinner"></span>
+                            <span>Cargando novedades...</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="news-latest-section">
+                    <div class="news-section-heading">
+                        <div>
+                            <span>ACTUALIZACIONES</span>
+                            <h2>Últimas publicaciones</h2>
+                        </div>
+
+                        <span id="news-results" class="news-results">0 resultados</span>
+                    </div>
+
+                    <div id="news-grid" class="news-grid">
+                        <div class="news-loading">
+                            <span class="news-spinner"></span>
+                            <span>Cargando noticias...</span>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+        <div class="news-modal" id="news-modal" aria-hidden="true">
+            <div class="news-modal-backdrop" data-news-modal-close></div>
+
+            <div class="news-modal-card" role="dialog" aria-modal="true">
+                <button class="news-modal-close" data-news-modal-close aria-label="Cerrar">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                </button>
+
+                <div class="news-modal-image" id="news-modal-image"></div>
+
+                <div class="news-modal-content">
+                    <div class="news-modal-top">
+                        <span class="news-modal-category" id="news-modal-category"></span>
+                        <span class="news-modal-date" id="news-modal-date"></span>
+                    </div>
+
+                    <h2 id="news-modal-title"></h2>
+
+                    <div class="news-modal-author">
+                        <div class="news-modal-avatar">
+                            <img id="news-modal-avatar" src="" alt="">
+                            <span id="news-modal-avatar-placeholder"></span>
+                        </div>
+
+                        <div class="news-modal-author-info">
+                            <span id="news-modal-author"></span>
+                            <strong id="news-modal-role"></strong>
+                        </div>
+                    </div>
+
+                    <div class="news-modal-divider"></div>
+
+                    <div class="news-modal-body" id="news-modal-body"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

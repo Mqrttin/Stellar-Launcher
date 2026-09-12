@@ -1,0 +1,236 @@
+<div class="home">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="assets/images/icon.png" alt="Logo Launcher">
+        </div>
+
+        <div class="sidebar-buttons">
+            <div class="nav-btn active" id="nav-play" data-tooltip="Jugar">
+                <svg viewBox="0 0 24 24">
+                    <path fill="white" d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
+
+            <div class="nav-btn" id="nav-instances" data-tooltip="Instancias">
+                <svg viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="white" stroke-width="2"/>
+                    <line x1="7" y1="8" x2="17" y2="8" stroke="white" stroke-width="2"/>
+                    <line x1="7" y1="12" x2="17" y2="12" stroke="white" stroke-width="2"/>
+                    <line x1="7" y1="16" x2="14" y2="16" stroke="white" stroke-width="2"/>
+                </svg>
+            </div>
+
+            <div class="nav-btn" id="nav-store" data-tooltip="Tienda">
+                <svg viewBox="0 0 24 24">
+                    <path fill="white" d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.2 14h9.9c.8 0 1.5-.5 1.8-1.2L21 6H6.2L5.3 4H2v2h2l3.6 7.6L6.2 16c-.1.3-.2.6-.2 1 0 1.1.9 2 2 2h12v-2H8.4c-.1 0-.2-.1-.2-.2l.1-.8z"/>
+                </svg>
+            </div>
+
+            <div class="nav-btn" id="nav-news" data-tooltip="Novedades">
+                <svg viewBox="0 0 24 24">
+                    <path fill="white" d="M6 2h9l5 5v15H6z"/>
+                    <polyline points="15 2 15 8 20 8" fill="none" stroke="#061522" stroke-width="2"/>
+                    <line x1="9" y1="12" x2="16" y2="12" stroke="#061522" stroke-width="2"/>
+                    <line x1="9" y1="16" x2="16" y2="16" stroke="#061522" stroke-width="2"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="settings-btn" data-tooltip="Configuración">
+                <svg viewBox="0 0 24 24">
+                    <path fill="white" d="M19.4 13a7.7 7.7 0 0 0 .05-1 7.7 7.7 0 0 0-.05-1l2-1.5-2-3.5-2.3.9a8 8 0 0 0-1.7-1L15 3h-6l-.4 2.9a8 8 0 0 0-1.7 1L4.6 6 2.6 9.5l2 1.5a7.7 7.7 0 0 0-.05 1c0 .34.02.67.05 1l-2 1.5 2 3.5 2.3-.9a8 8 0 0 0 1.7 1L9 21h6l.4-2.9a8 8 0 0 0 1.7-1l2.3.9 2-3.5z"/>
+                    <circle cx="12" cy="12" r="3" fill="#061522"/>
+                </svg>
+            </div>
+        </div>
+    </aside>
+
+    <main class="launcher-window">
+        <header class="topbar">
+            <div class="socials">
+                <div class="social-block" data-url="https://discord.gg/yewwunrTFY">
+                    <img src="assets/images/svgs/discord.svg" alt="Discord">
+                </div>
+
+                <div class="social-block" data-url="https://www.tiktok.com/@.pokearena">
+                    <img src="assets/images/svgs/tiktok.webp" alt="TikTok">
+                </div>
+
+                <div class="social-block" data-url="https://www.youtube.com/@PokeArenaDeBatalla/videos">
+                    <img src="assets/images/svgs/youtube.webp" alt="YouTube">
+                </div>
+
+                <div class="social-block" data-url="https://x.com">
+                    <img src="assets/images/svgs/x.png" alt="X">
+                </div>
+
+                <div class="social-block" data-url="https://tienda.stellarmc.com">
+                    <img src="assets/images/svgs/tienda.webp" alt="Tienda">
+                </div>
+            </div>
+
+            <div class="server-online">
+                <span class="online-dot"></span>
+                <div>
+                    <h4>Jugadores online</h4>
+                    <p><span id="online-count">0</span> jugadores conectados</p>
+                </div>
+            </div>
+
+            <div class="account-status">
+                <span class="crown">★</span>
+                <div>
+                    <h4>Cuenta Activa</h4>
+                    <p>Premium</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-layout">
+            <section class="content-area">
+
+                <div class="instance-card">
+                    <div class="instance-background">
+
+                        <div class="instance-info">
+                            <h1 class="server-status-name">Minecraft</h1>
+
+                            <h2>La mejor experiencia Pokémon</h2>
+
+                            <p>
+                                Explora, captura y entrena Pokémon en un mundo completamente renovado.
+                            </p>
+
+                            <div class="instance-actions">
+                                <button class="play-instance play-btn">
+                                    <span class="play-text">JUGAR</span>
+                                    <span class="play-icon">▶</span>
+                                </button>
+
+                                <button class="select-instance">
+                                    <svg viewBox="0 0 24 24">
+                                        <rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="white" stroke-width="2"/>
+                                        <line x1="7" y1="8" x2="17" y2="8" stroke="white" stroke-width="2"/>
+                                        <line x1="7" y1="12" x2="17" y2="12" stroke="white" stroke-width="2"/>
+                                        <line x1="7" y1="16" x2="14" y2="16" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="info-starting-game">
+                            <div class="download-header">
+                                <div class="download-status">
+                                    <span class="download-status-dot"></span>
+                                    <span class="info-starting-game-text">Descargando...</span>
+                                </div>
+
+                                <span class="download-percentage">0%</span>
+                            </div>
+
+                            <div class="download-file">
+                                <span class="download-file-name">Preparando descarga...</span>
+                            </div>
+
+                            <div class="download-progress-wrapper">
+                                <progress class="progress-bar" value="0" max="100"></progress>
+                            </div>
+
+                            <div class="download-details">
+                                <span class="download-size">0 MB / 0 MB</span>
+                                <span class="download-speed">0 MB/s</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <section class="news-section">
+                    <div class="news-layout">
+                        <div id="home-featured-news" class="featured-news"></div>
+
+                        <div id="home-latest-news" class="latest-news"></div>
+                    </div>
+                </section>
+
+            </section>
+
+            <aside class="right-panel">
+
+                <div class="account-card">
+                    <div class="player-head">
+                        <img id="skin-viewer" alt="Skin del jugador">
+                    </div>
+
+                    <h2>Jugador</h2>
+
+                    <p class="premium-text">
+                        Cuenta Premium
+                    </p>
+
+                    <button class="manage-account">
+                        <span>Gestionar cuenta</span>
+
+                        <svg viewBox="0 0 24 24">
+                            <path fill="#00eaff" d="M12 12c2.8 0 5-2.2 5-5s-2.2-5-5-5-5 2.2-5 5 2.2 5 5 5zm0 2c-3.3 0-10 1.7-10 5v2h20v-2c0-3.3-6.7-5-10-5z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="server-card">
+                    <h2>Estado del servidor</h2>
+
+                    <div class="server-line">
+                        <div class="server-info-left">
+                            <span class="online-dot"></span>
+                            <span>Estado</span>
+                        </div>
+
+                        <div class="server-status">
+                            <span class="server-status-text">Online</span>
+                        </div>
+                    </div>
+
+                    <div class="server-line">
+                        <div class="server-info-left">
+                            <svg viewBox="0 0 24 24">
+                                <path fill="#00eaff" d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zM8 11c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.94 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                            </svg>
+
+                            <span>Jugadores</span>
+                        </div>
+
+                        <strong class="server-value player-count">
+                            0/200
+                        </strong>
+                    </div>
+
+                    <div class="server-line">
+                        <div class="server-info-left">
+                            <svg viewBox="0 0 24 24">
+                                <path fill="#00eaff" d="M19.43 12.98c.04-.32.07-.65.07-.98s-.02-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.37-.31-.6-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98L14.5 2.42C14.47 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.5.42L9.12 5.1c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.08-.48 0-.6.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.08.65-.08.98s.03.66.08.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.37.31.6.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.68c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.38-2.68c.61-.25 1.17-.58 1.69-.98l2.49 1c.23.08.48 0 .6-.22l2-3.46c.13-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5A3.5 3.5 0 1 1 12 8a3.5 3.5 0 0 1 0 7.5z"/>
+                            </svg>
+
+                            <span>Versión</span>
+                        </div>
+
+                        <strong class="server-value">
+                            1.21.1
+                        </strong>
+                    </div>
+
+                    <button class="server-more">
+                        <span>Ver más información</span>
+
+                        <svg viewBox="0 0 24 24">
+                            <path fill="#00eaff" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3z"/>
+                            <path fill="#00eaff" d="M19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+                        </svg>
+                    </button>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+</div>
