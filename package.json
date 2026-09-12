@@ -1,7 +1,7 @@
 {
     "name": "stellarmc-launcher",
     "productName": "Stellar Network",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "description": "Launcher Oficial de Stellar Network",
     "main": "src/app.js",
     "author": {
@@ -25,7 +25,7 @@
         "appId": "com.stellar.launcher",
         "productName": "Stellar Network",
         "win": {
-            "requestedExecutionLevel": "highestAvailable"
+            "requestedExecutionLevel": "asInvoker"
         }
     },
     "dependencies": {
